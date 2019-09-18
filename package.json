@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hhaslam11/bootcampX/issues"
   },
-  "homepage": "https://github.com/hhaslam11/bootcampX#readme"
+  "homepage": "https://github.com/hhaslam11/bootcampX#readme",
+  "dependencies": {
+    "pg": "^7.12.1"
+  }
 }
