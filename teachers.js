@@ -18,10 +18,10 @@ JOIN students ON students.id = assistance_requests.student_id
 JOIN cohorts  ON cohorts.id  = students.cohort_id
 JOIN teachers ON teachers.id = assistance_requests.teacher_id
 
-WHERE cohorts.name = '${args}'
+WHERE cohorts.name = $1
 GROUP BY teachers.name, cohorts.name
 ORDER BY teachers.name;
-`)
+`, [args])
   .then(res => {
     console.log(res.rows);
   });
